@@ -1,7 +1,8 @@
 import random
 
 print('Это игра "Угадай число"')
-while 4==2+2:
+chise = 'y'
+while chise == 'y':
     print('Я загадал число от 1 до 10, у тебя есть 3 порытки чтобы угадать его')
     pc_number = random.randint(1, 10)
     print("Число от пк", + pc_number)
@@ -24,4 +25,4 @@ while 4==2+2:
     else:
         print("Ты проиграл") 
     print("\n")   
-    
+    chise = input('Продолжить? y/n ->')
