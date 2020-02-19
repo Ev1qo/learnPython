@@ -155,20 +155,81 @@
 #   print(max)
 #   print(min)
 #   print(mid) 
+#
+# i = 0
+# while i <= 10:
+#     i = i + 1
+#     if i > 7:
+#         i = i + 2
+# print(i)
+# a = 1
+# sum = 0
+# while a != 0:
+#     a = int(input())
+#     sum = sum + a
+# print(sum)
 
-num = input()
-rev =  num[::-1]
-last_digit = int(rev[0])
-# print(num, type(num))
-if last_digit == 1 and num != "11" and num != "111" and num != "211" and num != "311" and num != "411" and num != "511" and num != "611" and num != "711" and num != "811" and num != "911":
-    print(num, "программист")
-if (last_digit == 2 or last_digit == 3 or last_digit == 4) and (num != "112" and num != "113" and num != "114"):
-    print(num, "программиста")
-if (int(num) >=11 and int(num) <= 19):
-    print(num,"программистов")
-if last_digit >= 5 and last_digit <= 9:
-    print(num,"программистов")
-if last_digit == 0:
-     print(num,"программистов")
-if int(num) == 112 or int(num) == 113 or int(num) == 114 or int(num) == 111 or int(num) == 211 or int(num) == 311 or int(num) == 411 or int(num) == 511 or int(num) == 611 or int(num) == 711 or int(num) == 811 or int(num) == 911:
-    print(num,"программистов")
+# i = 0
+# s = 0
+# while i < 10:
+#     i = i + 1
+#     s = s + i
+#     if s > 15:
+#         break
+#     i = i + 1
+# print(i)
+
+#######################
+# Таблица умножения с прямоугольными блоками
+
+# def total(initial=5, *numbers, extra_number):
+#     count = initial
+#     for number in numbers:
+#         count += number
+#     count += extra_number
+#     print(count)
+#
+# total(10, 1, 2, 3, extra_number=50)
+# #total(10, 1, 2, 3)
+
+# def printMax(x, y):
+#     '''Выводит максимальное из двух чисел.
+#
+#         Оба значения должны быть целыми числами.'''
+#     x = int(x) # конвертируем в целые, если возможно
+#     y = int(y)
+#     if x > y:
+#         print(x, 'наибольшее')
+#     else:
+#         print(y, 'наибольшее')
+# printMax(3, 5)
+# print(printMax.__doc__)
+
+##########################
+# Програма для вывода таблицы умножения введеных чисел
+
+# a = int(input())
+# b = int(input())
+# c = int(input())
+# d = int(input())
+#
+# for i in range(c, d + 1):
+#     print("\t" + str(i), end = "")
+# print("")
+# for x in range(a, b + 1):
+#     print(str(x) + "\t", end="")
+#     for g in range(c, d + 1):
+#         print(str(g * x) + "\t", end="")
+#     print("")
+
+############################################################
+# Среднее арихметическое из отрезка чисел что делаляться на 3
+a = int(input())
+b = int(input())
+sum = 0
+counter = 0
+for i in range(a, b + 1):
+    if i % 3 == 0:
+        sum += i
+        counter += 1
+print(sum / counter)
