@@ -224,12 +224,23 @@
 
 ############################################################
 # Среднее арихметическое из отрезка чисел что делаляться на 3
-a = int(input())
-b = int(input())
-sum = 0
-counter = 0
-for i in range(a, b + 1):
-    if i % 3 == 0:
-        sum += i
-        counter += 1
-print(sum / counter)
+# a = int(input())
+# b = int(input())
+# sum = 0
+# counter = 0
+# for i in range(a, b + 1):
+#     if i % 3 == 0:
+#         sum += i
+#         counter += 1
+# print(sum / counter)
+
+#######################################
+# Алгорит кодирования строчки
+# s = "abcdefghijk"
+# print(s[3:6])
+# print(s[:6])
+# print(s[3:])
+# print(s[::-1])
+# print(s[-3:])
+# print(s[:-6])
+# print(s[-1:-10:-2])
