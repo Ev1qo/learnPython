@@ -224,12 +224,94 @@
 
 ############################################################
 # Среднее арихметическое из отрезка чисел что делаляться на 3
-a = int(input())
-b = int(input())
-sum = 0
-counter = 0
-for i in range(a, b + 1):
-    if i % 3 == 0:
-        sum += i
-        counter += 1
-print(sum / counter)
+# a = int(input())
+# b = int(input())
+# sum = 0
+# counter = 0
+# for i in range(a, b + 1):
+#     if i % 3 == 0:
+#         sum += i
+#         counter += 1
+# print(sum / counter)
+
+###################################################
+
+# string = input()
+# string = string.lower()
+# lenght = len(string)
+# g_count = string.count("g") + string.count("c")
+# cofficient = (g_count / lenght) * 100
+# print(cofficient)
+
+
+# s = str(input())
+# l = len(s)-1
+# c = 1
+# t = ''
+# if len(s)==1:
+#     t = t +s+str(c)
+# else:
+#     for i in range(0,l):
+#         if s[i]==s[i+1]:
+#             c +=1
+#         elif s[i]!=s[i+1]:
+#             t = t + s[i]+str(c)
+#             c = 1
+#     for j in range(l,l+1):
+#         if s[-1]==s[-2]:
+#             t = t +s[j]+str(c)
+#         elif s[-1]!=s[-2]:
+#             t = t +s[j]+str(c)
+#             c = 1
+# print(t)
+
+# genome = input()+' '
+# # s = 0
+# # n=genome[0]
+# # for i in genome:
+# #     if n!=i:
+# #         print(n + str(s), end = '')
+# #         s=0
+# #         n=i
+# #     s+=1
+# #
+# #
+
+# students = ['Ivan', 'Masha', 'Sasha']
+# students += ['Olga']
+# students += 'Olga'
+#
+# print(students)
+
+# string = input()
+# string = string.split()
+# string = string
+# sum = 0
+# for i in string:
+#     sum += int(i)
+# print(sum)
+
+################################
+# Напишите программу, на вход которой подаётся список чисел одной строкой.
+# Программа должна для каждого элемента этого списка вывести сумму двух его
+# соседей. Для элементов списка, являющихся крайними, одним из соседей
+# считается элемент, находящий на противоположном конце этого списка.
+# Например, если на вход подаётся список "1 3 5 6 10", то на выход
+# ожидается список "13 6 9 15 7" (без кавычек).
+
+# string = input()
+# string = string.split()
+# lenght = len(string)
+# list_of_numbers = []
+# if lenght < 2:
+#     print(string[0])
+# else:
+#     sum = int(string[1]) + int(string[lenght-1])
+#     list_of_numbers.append(sum)
+#     for i in range(1, lenght-1):
+#         sum = [int(string[i - 1]) + int(string[i + 1])]
+#         list_of_numbers += sum
+#     sum = int(string[lenght-2]) + int(string[0])
+#     list_of_numbers.append(sum)
+#     for i in list_of_numbers:
+#         print(i, "", end='')
